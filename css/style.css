@@ -16,7 +16,22 @@ body{
 
 /* BEM */
 .header{
+    position: absolute;
     text-align: center;
+    width: 100%;
     padding: 10vh;
     background-image: linear-gradient(to bottom, var(--primaryColor), 80%, rgba(183, 9, 76, 0));
+    
+    /* animation-name: headerAnimation;
+    animation-duration: 3s; */
 }
+
+/* Keyframes */
+/* @keyframes headerAnimation {
+    from{
+        top: 100vh;
+    }
+    to{
+        top: 0;
+    }
+} */
