@@ -1,0 +1,22 @@
+/* Globals */
+:root{
+    --primaryColor: rgb(183, 9, 76);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+
+/* Utilities */
+.container{
+    width: 90%;
+}
+
+/* BEM */
+.header{
+    text-align: center;
+    padding: 10vh;
+    background-image: linear-gradient(to bottom, var(--primaryColor), 80%, rgba(183, 9, 76, 0));
+}
