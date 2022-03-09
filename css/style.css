@@ -1,10 +1,11 @@
-/* * Globals */
+/* * === Globals === */
 :root{
     --primaryColor: hsl(337, 91%, 38%);
     --depositColor: hsl(178, 90%, 40%);
     --depositLightColor: hsl(178, 70%, 60%);
     --expenseColor: hsl(0, 90%, 40%);
     --expenseLightColor: hsl(0, 70%, 60%);
+    --lightGray: #777;
 }
 *{
     box-sizing: border-box;
@@ -18,14 +19,17 @@ h1{
 }
 h2{
     font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: normal;
 }
 h3{
     font-size: 1.5rem;
 }
 
-/* * Utilities */
+/* *=== Utilities === */
 .container{
     width: 90%;
+    margin: 0 auto;
 }
 .expenseLightColor{
     font-size: .6rem;
@@ -39,13 +43,14 @@ h3{
     background-color: var(--expenseLightColor);
 }
 
-/* * BEM */
+/* * === BEM === */
 /* Header */
 .header{
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 100%;
     padding: 5vh;
+    margin-bottom: 4rem;
     background-image: linear-gradient(to bottom, var(--primaryColor), 80%, rgba(183, 9, 76, 0));
     
     animation-name: headerAnimation;
@@ -84,7 +89,33 @@ h3{
     background-color: var(--expenseColor)
 }
 
-/* * Keyframes */
+/* Main */
+.main{
+    color: var(--depositLightColor);
+}
+.deposit__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.deposit__container:hover
+.deposit__value{
+    margin-right: 2rem;
+}
+.deposit__container:hover
+.deposit__description{
+    margin-left: 2rem;
+}
+.deposit__description,
+.deposit__value{
+    transition: .3s;
+    font-size: 1.4rem;
+}
+.deposit__description{
+    color: var(--lightGray);
+}
+
+/* * === Keyframes === */
 /* @keyframes headerAnimation {
     from{
         top: 100vh;
