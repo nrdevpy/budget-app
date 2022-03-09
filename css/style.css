@@ -90,13 +90,13 @@ h3{
 }
 
 /* == Main == */
-.main{
-    position:relative;
+.deposit{
     color: var(--depositLightColor);
-    /* animation-name: headerAnimation;
-    animation-duration: 3.2s; */
 }
-.list__deposit{
+.expense{
+    color: var(--expenseLightColor);
+}
+.list__element{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -115,18 +115,17 @@ h3{
 }
 /* = List Animation = */
 /* Make animation when pointer is hover the list */
-.list__deposit:hover
+.list__element:hover
 .element__value{
     margin-right: 2rem;
 }
-.list__deposit:hover
+.list__element:hover
 .element__description{
     margin-left: 2rem;
 }
-.list__deposit:hover
+.list__element:hover
 .element__remove--btn{
-    color: var(--depositLightColor);
-    margin-left: 1rem;
+    color: unset;
 }
 .element__remove--btn {
     border: none;
@@ -134,6 +133,12 @@ h3{
     font-size: 1.4rem;
     color: #fff;
     cursor: pointer;
+    margin-left: 1rem;
+}
+@media screen and (max-width: 768px) {
+    .element__remove--btn{
+        color: unset;
+    }
 }
   
 /* * === Keyframes === */
