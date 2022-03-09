@@ -4,7 +4,7 @@ class Deposit extends Data{
     constructor(description, value){
         super(description, value);
 
-        this._id = ++Data.counterDeposit;
+        this._id = ++Deposit.counterDeposit;
     }
 
     get id(){
