@@ -105,10 +105,13 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 0.1px #eee solid;
+    border-top: 0.1px #eee solid;
     margin-bottom: .5rem;
     padding: 0 1rem;
     gap: 1rem;
+}
+.list__element:first-of-type{
+    border: none;
 }
 .element__description,
 .element__value,
