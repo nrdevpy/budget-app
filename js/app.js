@@ -1,12 +1,14 @@
 // === Arrays Variables ===
 const deposits = [
     new Deposit('Salario', 1600),
-    new Deposit('Venta de coche', 5000)
+    new Deposit('Venta de coche', 5000),
+    new Deposit('Venta de consola', 200),
 ];
 
 const expenses = [
     new Expense('Hipoteca', 800),
-    new Expense('Ropa', 100)
+    new Expense('Ropa', 100),
+    new Expense('Mochila', 30),
 ];
 
 // === Calculate total value of deposit and expense ===
@@ -59,7 +61,7 @@ let reloadBudget = () => {
     document.getElementById('ptgExpense').innerHTML = ptgFormat(ptgExpense);
 };
 
-// === Upload Deposit ===
+// === Upload Deposits and Expenses ===
 const uploadDeposit = () => {
     let depositHTML = '';
 
@@ -90,8 +92,11 @@ const createDepositHTML = (deposit) => {
         </div>
         <div class="element__value">
             <p>${currencyFormat(deposit.value)}</p>
-            <button class="element__remove--btn">
-                <ion-icon name="close-circle-outline"></ion-icon>
+            <button class="element__remove--btn" id="rmvButton">
+                <ion-icon
+                    name="close-circle-outline"
+                    onclick="dltDeposit(${deposit.id})">
+                </ion-icon>
             </button>
         </div>
     </div>
@@ -118,6 +123,13 @@ const createExpenseHTML = (expense) => {
     `;
     return expenseHTML;
 };
+// === Function to remove elements from list ===
+const dltDeposit = (id)=>{
+    let idRemove = deposits.findIndex(deposit => deposits.id === id);
+    deposits.splice(idRemove, 1);
+    uploadDeposit();
+    reloadBudget();
+}
 
 // === App ===
 let startApp = () => {

@@ -152,7 +152,7 @@ h3{
     .main{
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: baseline;
         gap: 2rem;
     }
     .element__remove--btn{
