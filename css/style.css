@@ -37,6 +37,7 @@ h3{
     border-radius: .5rem;
     background-color: var(--expenseLightColor);
     color: #fff;
+    margin-left: 1rem;
 }
 .depositLightColor{
     background-color: var(--depositLightColor);
@@ -105,7 +106,9 @@ h3{
     justify-content: space-between;
     align-items: center;
     border: 0.1px #eee solid;
+    margin-bottom: .5rem;
     padding: 0 1rem;
+    gap: 1rem;
 }
 .element__description,
 .element__value,
@@ -119,7 +122,9 @@ h3{
 .element__value{
     display: flex;
     align-items: center;
-    gap: 1rem;
+}
+.elemet__value p:last-child{
+    margin-left: 2rem;
 }
 /* = List Animation = */
 /* Make animation when pointer is hover the list */
