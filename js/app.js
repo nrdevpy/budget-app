@@ -92,7 +92,7 @@ const createDepositHTML = (deposit) => {
         </div>
         <div class="element__value">
             <p>${currencyFormat(deposit.value)}</p>
-            <button class="element__remove--btn" id="rmvButton">
+            <button class="element__remove--btn">
                 <ion-icon
                     name="close-circle-outline"
                     onclick="dltDeposit(${deposit.id})">
@@ -107,7 +107,7 @@ const createExpenseHTML = (expense) => {
     let ptgExpense = expense.value / totalDeposit();
     let expenseHTML = `
     <div class="list__element" id="list__deposit">
-        <div class="deposit__element">
+        <div class="expense__element">
             <div class="element__description">
                 <p>${expense.description}</p>
             </div>
@@ -116,7 +116,10 @@ const createExpenseHTML = (expense) => {
             <p>${currencyFormat(expense.value)}</p>
             <p class="expenseLightColor">${ptgFormat(ptgExpense)}</p>
             <button class="element__remove--btn">
-                <ion-icon name="close-circle-outline"></ion-icon>
+                <ion-icon
+                    name="close-circle-outline"
+                    onclick="dltExpense(${expense.id})">
+                </ion-icon>
             </button>
         </div>
     </div>
@@ -125,12 +128,18 @@ const createExpenseHTML = (expense) => {
 };
 // === Function to remove elements from list ===
 const dltDeposit = (id)=>{
-    let idRemove = deposits.findIndex(deposit => deposits.id === id);
+    let idRemove = deposits.findIndex(deposits => deposits.id === id);
     deposits.splice(idRemove, 1);
     uploadDeposit();
     reloadBudget();
 }
 
+const dltExpense = (id)=>{
+    let idRemove = expenses.findIndex(expenses => expenses.id === id);
+    expenses.splice(idRemove, 1);
+    uploadExpense();
+    reloadBudget();
+}
 // === App ===
 let startApp = () => {
     uploadDeposit();
