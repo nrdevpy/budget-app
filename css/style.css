@@ -6,6 +6,7 @@
     --expenseColor: hsl(0, 90%, 40%);
     --expenseLightColor: hsl(0, 70%, 60%);
     --lightGray: #777;
+    --lineColor: #eee;
 }
 *{
     box-sizing: border-box;
@@ -105,7 +106,7 @@ h3{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 0.1px #eee solid;
+    border-top: 0.1px var(--lineColor) solid;
     margin-bottom: .5rem;
     padding: 0 1rem;
     gap: 1rem;
