@@ -44,7 +44,7 @@ h3{
 }
 
 /* * === BEM === */
-/* Header */
+/* == Header == */
 .header{
     position: relative;
     text-align: center;
@@ -89,7 +89,7 @@ h3{
     background-color: var(--expenseColor)
 }
 
-/* Main */
+/* == Main == */
 .main{
     color: var(--depositLightColor);
 }
@@ -98,6 +98,20 @@ h3{
     justify-content: space-between;
     align-items: center;
 }
+.element__description,
+.element__value,
+.element__remove--btn{
+    transition: .5s;
+    font-size: 1.4rem;
+}
+.element__description{
+    color: var(--lightGray);
+}
+.element__value{
+    display: flex;
+}
+/* = List Animation = */
+/* Make animation when pointer is hover the list */
 .list__deposit:hover
 .element__value{
     margin-right: 2rem;
@@ -106,15 +120,19 @@ h3{
 .element__description{
     margin-left: 2rem;
 }
-.element__description,
-.element__value{
-    transition: .3s;
+.list__deposit:hover
+.element__remove--btn{
+    color: var(--depositLightColor);
+    margin-left: 1rem;
+}
+.element__remove--btn {
+    border: none;
+    background-color: unset;
     font-size: 1.4rem;
+    color: #fff;
+    cursor: pointer;
 }
-.element__description{
-    color: var(--lightGray);
-}
-
+  
 /* * === Keyframes === */
 /* @keyframes headerAnimation {
     from{
