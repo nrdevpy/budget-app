@@ -78,10 +78,8 @@ h3{
 .budget__deposit--flex,
 .budget__expense--flex{
     display: flex;
-    gap: 2rem;
     justify-content: space-between;
     align-items: center;
-    min-width: 10rem;
 }
 .budget__deposit{
     background-color: var(--depositColor);
