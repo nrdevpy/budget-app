@@ -27,11 +27,10 @@ h3{
 .container{
     width: 90%;
 }
-.depositLightColor,
 .expenseLightColor{
-    font-size: .8rem;
-    padding: .2rem .5rem;
-    border-radius: 25%;
+    font-size: .6rem;
+    padding: .3rem;
+    border-radius: .5rem;
 }
 .depositLightColor{
     background-color: var(--depositLightColor);
@@ -74,6 +73,9 @@ h3{
 .budget__expense--flex{
     display: flex;
     gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 10rem;
 }
 .budget__deposit{
     background-color: var(--depositColor);

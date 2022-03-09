@@ -9,26 +9,28 @@
         <link href="css/style.css" rel="stylesheet"/>
     </head>
 
-    <body>
+    <body onload="startApp()">
 
         <!-- === Header === -->
         <header class="header">
             <h1>Presupuesto Disponible:</h1>
+
             <div class="budget__value">
-                <p>+ 2.000 €</p>
+                <p id="budget"></p>
             </div>
+
             <div class="budget__deposit">
                 <p>Ingresos</p>
                 <div class="budget__deposit--flex">
-                    <p>+ 3.600 €</p>
-                    <p class="depositLightColor">1%</p>
+                    <p id="deposit"></p>
                 </div>
             </div>
+
             <div class="budget__expense">
                 <p>Gastos</p>
                 <div class="budget__expense--flex">
-                    <p>- 1.300 €</p>
-                    <p class="expenseLightColor">1%</p>
+                    <p id="expense"></p>
+                    <p class="expenseLightColor" id="ptgExpense"></p>
                 </div>
             </div>
         </header>
