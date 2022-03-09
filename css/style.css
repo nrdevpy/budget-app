@@ -93,25 +93,25 @@ h3{
 .main{
     color: var(--depositLightColor);
 }
-.deposit__container{
+.list__deposit{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.deposit__container:hover
-.deposit__value{
+.list__deposit:hover
+.element__value{
     margin-right: 2rem;
 }
-.deposit__container:hover
-.deposit__description{
+.list__deposit:hover
+.element__description{
     margin-left: 2rem;
 }
-.deposit__description,
-.deposit__value{
+.element__description,
+.element__value{
     transition: .3s;
     font-size: 1.4rem;
 }
-.deposit__description{
+.element__description{
     color: var(--lightGray);
 }
 
