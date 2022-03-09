@@ -1,6 +1,6 @@
 class Data{
     constructor(description, value){
-        this._ddescription = description;
+        this._description = description;
         this._value = value;
     }
 
