@@ -11,11 +11,29 @@
 
     <body>
 
+        <!-- === Header === -->
         <header class="header">
-            <h1>Budget App</h1>
+            <h1>Presupuesto Disponible:</h1>
+            <div class="budget__value">
+                <p>+ 2.000 €</p>
+            </div>
+            <div class="budget__deposit">
+                <p>Ingresos</p>
+                <div class="budget__deposit--flex">
+                    <p>+ 3.600 €</p>
+                    <p class="depositLightColor">1%</p>
+                </div>
+            </div>
+            <div class="budget__expense">
+                <p>Gastos</p>
+                <div class="budget__expense--flex">
+                    <p>- 1.300 €</p>
+                    <p class="expenseLightColor">1%</p>
+                </div>
+            </div>
         </header>
         
-        <!-- Scripts -->
+        <!-- === Scripts === -->
         <script src="js/Dato.js"></script>
         <script src="js/Ingreso.js"></script>
         <script src="js/Gasto.js"></script>
