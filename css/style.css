@@ -115,8 +115,8 @@ h3{
 .element__description,
 .element__value,
 .element__remove--btn{
-    transition: .5s;
-    font-size: 1.4rem;
+    transition: .3s;
+    font-size: 1.2rem;
 }
 .element__description{
     color: var(--lightGray);
@@ -128,20 +128,8 @@ h3{
 .elemet__value p:last-child{
     margin-left: 2rem;
 }
-/* = List Animation = */
-/* Make animation when pointer is hover the list */
-.list__element:hover
-.element__value{
-    margin-right: 2rem;
-}
-.list__element:hover
-.element__description{
-    margin-left: 2rem;
-}
-.list__element:hover
-.element__remove--btn{
-    color: unset;
-}
+
+
 .element__remove--btn {
     color: currentColor;
     border: none;
@@ -159,6 +147,20 @@ h3{
     }
     .element__remove--btn{
         color: #fff;
+    }
+    /* = List Animation = */
+    /* Make animation when pointer is hover the list */
+    .list__element:hover
+    .element__value{
+        margin-right: 2rem;
+    }
+    .list__element:hover
+    .element__description{
+        margin-left: 2rem;
+    }
+    .list__element:hover
+    .element__remove--btn{
+        color: unset;
     }
 }
   
