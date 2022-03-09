@@ -53,8 +53,8 @@ h3{
     margin-bottom: 4rem;
     background-image: linear-gradient(to bottom, var(--primaryColor), 80%, rgba(183, 9, 76, 0));
     
-    animation-name: headerAnimation;
-    animation-duration: 3s;
+    /* animation-name: headerAnimation;
+    animation-duration: 3s; */
 }
 .budget__value{
     font-size: 1.8rem;
@@ -91,7 +91,10 @@ h3{
 
 /* == Main == */
 .main{
+    position:relative;
     color: var(--depositLightColor);
+    /* animation-name: headerAnimation;
+    animation-duration: 3.2s; */
 }
 .list__deposit{
     display: flex;
@@ -134,11 +137,11 @@ h3{
 }
   
 /* * === Keyframes === */
-/* @keyframes headerAnimation {
+@keyframes headerAnimation {
     from{
         top: 100vh;
     }
     to{
         top: 0;
     }
-} */
+}
