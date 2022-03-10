@@ -10,10 +10,10 @@
 }
 *{
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 body{
     margin: 0;
-    font-family: sans-serif;
 }
 h1{
     font-size: 2rem;
@@ -25,6 +25,26 @@ h2{
 }
 h3{
     font-size: 1.5rem;
+}
+fieldset{
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+select{
+    background-color: #fff;
+    border: none;
+}
+input{
+    outline: none;
+    border: none;
+    min-width: 100%;
+}
+select, input{
+    border: 1px solid var(--lineColor);
+    padding: .5rem 1rem;
 }
 
 /* *=== Utilities === */
@@ -43,7 +63,13 @@ h3{
 .depositLightColor{
     background-color: var(--depositLightColor);
 }
-
+.add__btn{
+    background-color: unset;
+    border: none;
+    color: var(--depositColor);
+    font-size: 2rem;
+    cursor: pointer;
+}
 /* * === BEM === */
 /* == Header == */
 .header{

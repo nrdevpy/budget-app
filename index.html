@@ -36,14 +36,17 @@
         </header>
 
         <!-- === Form === -->
-        <form>
+        <form id="form">
             <fieldset>
                 <select name="select" id="select">
                     <option value="deposit">+</option>
                     <option value="expense">-</option>
                 </select>
-                <input type="text" id="concept"/>
-                <input type="number" id="money">
+                <input type="text" id="description" placeholder="Introduce una descripción"/>
+                <input type="number" id="money" placeholder="Introduce valor" step="any">
+                <button onclick="addValues()" class="add__btn" type="button">
+                    <ion-icon name="CheckMark-Circle-Outline"></ion-icon>
+                </button>
             </fieldset>
         </form>
         
