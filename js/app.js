@@ -152,10 +152,7 @@ const turnIconColor = ()=>{
         btnStyleHandler.color = 'var(--expenseColor)';
     }
 }
-/* const turnIconRed = ()=>{
-    let btnHandler = document.getElementById('add-btn');
-    btnHandler.style.color = 'red';
-} */
+
 // === App ===
 let startApp = () => {
     uploadDeposit();

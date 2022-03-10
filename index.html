@@ -41,18 +41,29 @@
                 <select name="select" id="select">
                     <option
                         value="deposit"
-                        onclick="turnIconColor()"
-                        id="green">+
+                        onclick="turnIconColor()">+
                     </option>
                     <option
                         value="expense"
-                        onclick="turnIconColor()"
-                        id="red">-
+                        onclick="turnIconColor()">-
                     </option>
                 </select>
-                <input type="text" id="description" placeholder="Introduce una descripción"/>
-                <input type="number" id="money" placeholder="Introduce valor" step="any">
-                <button onclick="addValues()" class="add__btn" type="button" id="add-btn">
+                <input
+                    type="text"
+                    id="description"
+                    placeholder="Introduce una descripción"
+                />
+                <input
+                    type="number"
+                    id="money"
+                    placeholder="Introduce valor"
+                    step="any"
+                >
+                <button
+                    onclick="addValues()"
+                    class="add__btn"
+                    type="button"
+                    id="add-btn">
                     <ion-icon name="CheckMark-Circle-Outline"></ion-icon>
                 </button>
             </fieldset>
