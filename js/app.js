@@ -146,10 +146,10 @@ const turnIconColor = ()=>{
     let btnStyleHandler = document.getElementById('add-btn').style;
     
     if (selectValueHandler === 'deposit'){
-        btnStyleHandler.color = 'var(--depositColor)';
+        btnStyleHandler.color = 'red';
     }
     else if (selectValueHandler === 'expense'){
-        btnStyleHandler.color = 'var(--expenseColor)';
+        btnStyleHandler.color = 'blue';
     }
 }
 
