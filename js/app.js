@@ -156,13 +156,13 @@ const dltExpense = (id)=>{
 const turnIconSeaGreen = () => {
     let btnStyleHandler = document.getElementById('add-btn').style;
 
-    btnStyleHandler.color = 'var(--depositColor)';
+    return btnStyleHandler.color = 'var(--depositColor)';
     console.log(btnStyleHandler);
 }
 const turnIconRed = () => {
     let btnStyleHandler = document.getElementById('add-btn').style;
     
-    btnStyleHandler.color = 'var(--expenseColor)';
+    return btnStyleHandler.color = 'var(--expenseColor)';
     console.log(btnStyleHandler);
 }
 
