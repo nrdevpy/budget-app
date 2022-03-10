@@ -47,7 +47,7 @@ const ptgFormat = (value) => {
             minimumFractionDigits: 2
         }
     )
-}
+};
 
 // === Reload Header ===
 let reloadBudget = () => {
@@ -132,14 +132,14 @@ const dltDeposit = (id)=>{
     deposits.splice(idRemove, 1);
     uploadDeposit();
     reloadBudget();
-}
+};
 
 const dltExpense = (id)=>{
     let idRemove = expenses.findIndex(expenses => expenses.id === id);
     expenses.splice(idRemove, 1);
     uploadExpense();
     reloadBudget();
-}
+};
 // === Submit of colors ===
 /* const turnIconColor = ()=>{
     let selectValueHandler = document.forms['form']['select'].value;
