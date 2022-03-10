@@ -157,11 +157,13 @@ const turnIconSeaGreen = () => {
     let btnStyleHandler = document.getElementById('add-btn').style;
 
     btnStyleHandler.color = 'var(--depositColor)';
+    console.log(btnStyleHandler);
 }
 const turnIconRed = () => {
     let btnStyleHandler = document.getElementById('add-btn').style;
-
+    
     btnStyleHandler.color = 'var(--expenseColor)';
+    console.log(btnStyleHandler);
 }
 
 // === App ===
