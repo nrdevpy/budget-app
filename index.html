@@ -39,12 +39,20 @@
         <form id="form">
             <fieldset>
                 <select name="select" id="select">
-                    <option value="deposit">+</option>
-                    <option value="expense">-</option>
+                    <option
+                        value="deposit"
+                        onclick="turnIconColor()"
+                        id="green">+
+                    </option>
+                    <option
+                        value="expense"
+                        onclick="turnIconColor()"
+                        id="red">-
+                    </option>
                 </select>
                 <input type="text" id="description" placeholder="Introduce una descripción"/>
                 <input type="number" id="money" placeholder="Introduce valor" step="any">
-                <button onclick="addValues()" class="add__btn" type="button">
+                <button onclick="addValues()" class="add__btn" type="button" id="add-btn">
                     <ion-icon name="CheckMark-Circle-Outline"></ion-icon>
                 </button>
             </fieldset>
