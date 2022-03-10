@@ -141,7 +141,7 @@ const dltExpense = (id)=>{
     reloadBudget();
 }
 // === Submit of colors ===
-const turnIconColor = ()=>{
+/* const turnIconColor = ()=>{
     let selectValueHandler = document.forms['form']['select'].value;
     let btnStyleHandler = document.getElementById('add-btn').style;
     
@@ -151,6 +151,17 @@ const turnIconColor = ()=>{
     else if (selectValueHandler === 'expense'){
         btnStyleHandler.color = 'var(--expenseColor)';
     }
+} */
+
+const turnIconSeaGreen = () => {
+    let btnStyleHandler = document.getElementById('add-btn').style;
+
+    btnStyleHandler.color = 'var(--depositColor)';
+}
+const turnIconRed = () => {
+    let btnStyleHandler = document.getElementById('add-btn').style;
+
+    btnStyleHandler.color = 'var(--expenseColor)';
 }
 
 // === App ===
