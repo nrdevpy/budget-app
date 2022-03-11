@@ -167,16 +167,23 @@ const turnIconRed = () => {
 } */
 
 const turnIconColor = ()=>{
-    let depositBtn = document.getElementById('deposit-btn');
-    let expenseBtn = document.getElementById('expense-btn');
+    let selectHandler = document.forms['form']['select'];
+    /* let depositBtn = document.getElementById('deposit-btn');
+    let expenseBtn = document.getElementById('expense-btn'); */
     let btnStyle = document.getElementById('add-btn').style;
     
-    depositBtn.addEventListener('click', ()=>{
+    /* depositBtn.addEventListener('click', ()=>{
         btnStyle.color = 'var(--depositColor)'
     });
     expenseBtn.addEventListener('click', ()=>{
         btnStyle.color = 'var(--expenseColor)'
-    });
+    }); */
+    if (selectHandler.value === 'deposit'){
+        btnStyle.color = 'var(--depositColor)';
+    }
+    else if (selectHandler.value === 'expense'){
+        btnStyle.color = 'var(--expenseColor)';
+    }
 };
 
 // === App ===
