@@ -153,7 +153,7 @@ const dltExpense = (id)=>{
     }
 } */
 
-const turnIconSeaGreen = () => {
+/* const turnIconSeaGreen = () => {
     let btnStyleHandler = document.getElementById('add-btn').style;
 
     return btnStyleHandler.color = 'var(--depositColor)';
@@ -164,10 +164,24 @@ const turnIconRed = () => {
     
     return btnStyleHandler.color = 'var(--expenseColor)';
     console.log(btnStyleHandler);
-}
+} */
+
+const turnIconColor = ()=>{
+    let depositBtn = document.getElementById('deposit-btn');
+    let expenseBtn = document.getElementById('expense-btn');
+    let btnStyle = document.getElementById('add-btn').style;
+
+    depositBtn.addEventListener('click', ()=>{
+        btnStyle.color = 'var(--depositColor)'
+    });
+    expenseBtn.addEventListener('click', ()=>{
+        btnStyle.color = 'var(--expenseColor)'
+    });
+};
 
 // === App ===
 let startApp = () => {
+    turnIconColor();
     uploadDeposit();
     uploadExpense();
     reloadBudget();
