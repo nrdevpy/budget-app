@@ -170,7 +170,7 @@ const turnIconColor = ()=>{
     let depositBtn = document.getElementById('deposit-btn');
     let expenseBtn = document.getElementById('expense-btn');
     let btnStyle = document.getElementById('add-btn').style;
-
+    
     depositBtn.addEventListener('click', ()=>{
         btnStyle.color = 'var(--depositColor)'
     });
@@ -181,7 +181,6 @@ const turnIconColor = ()=>{
 
 // === App ===
 let startApp = () => {
-    turnIconColor();
     uploadDeposit();
     uploadExpense();
     reloadBudget();
