@@ -141,6 +141,8 @@ const dltExpense = (id)=>{
     reloadBudget();
 };
 // === Submit of colors ===
+
+// ! I Tried more option like functions of below, but doesn't works in Microsoft Edge.
 /* const turnIconColor = ()=>{
     let selectValueHandler = document.forms['form']['select'].value;
     let btnStyleHandler = document.getElementById('add-btn').style;
@@ -168,16 +170,8 @@ const turnIconRed = () => {
 
 const turnIconColor = ()=>{
     let selectHandler = document.forms['form']['select'];
-    /* let depositBtn = document.getElementById('deposit-btn');
-    let expenseBtn = document.getElementById('expense-btn'); */
     let btnStyle = document.getElementById('add-btn').style;
-    
-    /* depositBtn.addEventListener('click', ()=>{
-        btnStyle.color = 'var(--depositColor)'
-    });
-    expenseBtn.addEventListener('click', ()=>{
-        btnStyle.color = 'var(--expenseColor)'
-    }); */
+
     if (selectHandler.value === 'deposit'){
         btnStyle.color = 'var(--depositColor)';
     }
