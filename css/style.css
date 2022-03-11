@@ -40,11 +40,17 @@ select{
 input{
     outline: none;
     border: none;
-    min-width: 100%;
+    width: 100%;
 }
 select, input{
     border: 1px solid var(--lineColor);
     padding: .5rem 1rem;
+}
+
+@media screen and (min-width: 768px){
+    fieldset{
+        flex-direction: row;
+    }
 }
 
 /* *=== Utilities === */
@@ -59,9 +65,6 @@ select, input{
     background-color: var(--expenseLightColor);
     color: #fff;
     margin-left: 1rem;
-}
-.depositLightColor{
-    background-color: var(--depositLightColor);
 }
 .add__btn{
     background-color: unset;
