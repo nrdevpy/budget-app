@@ -186,19 +186,14 @@ const addValues =()=>{
     let selectValue = form['select'].value;
     let desValue = form['description'].value;
     let moneyValue = form['money'].value;
-    
-    if (selectValue === 'deposit'){
-        if (desValue !== '' && moneyValue !== ''){
-            deposits.push(
-                new Deposit(desValue, +moneyValue)
-            );
+
+    if (desValue !== '' && moneyValue !== '') {
+        if (selectValue === 'deposit') {
+            deposits.push(new Deposit(desValue, +moneyValue));
             uploadDeposit();
             reloadBudget();
-        }
-        else if (selectValue === 'expense'){
-            expenses.push(
-                new Expense(desValue, +moneyValue)
-            );
+        } else if (selectValue === 'expense') {
+            expenses.push(new Expense(desValue, +moneyValue));
             uploadExpense();
             reloadBudget();
         }
