@@ -140,8 +140,8 @@ const dltExpense = (id)=>{
     uploadExpense();
     reloadBudget();
 };
-// === Submit of colors ===
 
+// === Submit of colors ===
 // ! I Tried more option like functions of below, but doesn't works in Microsoft Edge.
 /* const turnIconColor = ()=>{
     let selectValueHandler = document.forms['form']['select'].value;
@@ -177,6 +177,31 @@ const turnIconColor = ()=>{
     }
     else if (selectHandler.value === 'expense'){
         btnStyle.color = 'var(--expenseColor)';
+    }
+};
+
+// === Add new values to the list ===
+const addValues =()=>{
+    let form = document.forms['form'];
+    let selectValue = form['select'].value;
+    let desValue = form['description'].value;
+    let moneyValue = form['money'].value;
+    
+    if (selectValue === 'deposit'){
+        if (desValue !== '' && moneyValue !== ''){
+            deposits.push(
+                new Deposit(desValue, +moneyValue)
+            );
+            uploadDeposit();
+            reloadBudget();
+        }
+        else if (selectValue === 'expense'){
+            expenses.push(
+                new Expense(desValue, +moneyValue)
+            );
+            uploadExpense();
+            reloadBudget();
+        }
     }
 };
 
