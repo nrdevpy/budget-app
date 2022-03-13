@@ -17,6 +17,7 @@ body{
 }
 h1{
     font-size: 2rem;
+    color: #fff;
 }
 h2{
     font-size: 1.8rem;
@@ -86,13 +87,17 @@ input:focus{
     width: 100%;
     padding: 5vh;
     margin-bottom: 4rem;
-    background-image: linear-gradient(to bottom, var(--primaryColor), 80%, rgba(183, 9, 76, 0));
-    
+    background: rgba(0,0,0, .5) url('../img/image-2.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-blend-mode: darken;
     /* animation-name: headerAnimation;
     animation-duration: 3s; */
 }
 .budget__value{
-    font-size: 1.8rem;
+    font-size: 2rem;
+    color: #fff;
 }
 .budget__deposit,
 .budget__expense{
