@@ -1,14 +1,16 @@
 // === Arrays Variables ===
 const deposits = [
-    new Deposit('Salario', 1600),
+    // * Objects Test
+    /* new Deposit('Salario', 1600),
     new Deposit('Venta de coche', 5000),
-    new Deposit('Venta de consola', 200),
+    new Deposit('Venta de consola', 200), */
 ];
 
 const expenses = [
-    new Expense('Hipoteca', 800),
+    // * Objects Test
+    /* new Expense('Hipoteca', 800),
     new Expense('Ropa', 100),
-    new Expense('Mochila', 30),
+    new Expense('Mochila', 30), */
 ];
 
 // === Calculate total value of deposit and expense ===
