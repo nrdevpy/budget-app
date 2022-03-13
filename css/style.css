@@ -87,7 +87,7 @@ input:focus{
     width: 100%;
     padding: 5vh;
     margin-bottom: 4rem;
-    background: rgba(0,0,0, .5) url('../img/image-2.jpg');
+    background: rgba(0,0,0, .5) url('../img/header.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
