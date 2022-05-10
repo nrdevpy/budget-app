@@ -5,9 +5,9 @@ Budget App is an application web where you can write your deposits and your expe
 <br><br>
 
 # Tecnologías
-<img src="img/html5.png" width="48">
-<img src="img/css.png" width="48">
-<img src="img/js.png" width="48">
+<img src="img/html5.png" width="48" align="left">
+<img src="img/css.png" width="48" align="left">
+<img src="img/js.png" width="48" align="left">
 <br><br>
 
 ## CSS
